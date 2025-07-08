@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Seguimiento de Proyecto</title>
+  <style>
+    body { font-family: Arial, sans-serif; text-align: center; padding: 40px; background-color: #f5f5f5; }
+    .container { background: white; padding: 30px; max-width: 500px; margin: auto; border-radius: 12px; box-shadow: 0 0 10px rgba(0,0,0,0.1); }
+    input { width: 100%; padding: 12px; font-size: 16px; margin-top: 20px; border-radius: 8px; border: 1px solid #ccc; }
+    button { padding: 12px 24px; font-size: 16px; margin-top: 20px; background: #111827; color: white; border: none; border-radius: 8px; cursor: pointer; }
+    .error { margin-top: 20px; color: red; font-size: 14px; }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>Consulta tu Proyecto</h1>
+    <p>Ingresa tu código único para acceder a tu información</p>
+    <input type="text" id="projectCode" placeholder="Ej: A13-0925">
+    <button onclick="checkCode()">Ver Proyecto</button>
+    <div class="error" id="error"></div>
+  </div>
+  <script src="scripts.js"></script>
+</body>
+</html>
